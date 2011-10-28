@@ -109,6 +109,9 @@ nav,
 section {
   display: block;
 }
+section {
+  padding-top: 60px;
+}
 audio, canvas, video {
   display: inline-block;
   *display: inline;
