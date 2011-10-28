@@ -12,7 +12,7 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
 
@@ -30,12 +30,40 @@
     <div class="navbar navbar-fixed" data-scrollspy="scrollspy">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="/">Clinton Judy</a>
+          <a class="brand" href="./index.html">Bootstrap</a>
           <ul class="nav">
             <li class="active"><a href="#overview">Overview</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#history">history</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-dropdown="true">Scaffolding</a>
+              <ul class="dropdown-menu">
+                <li><a href="#grid-system">Grid</a></li>
+                <li><a href="#layouts">Layouts</a></li>
+                <li><a href="#responsive">Resposive</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-dropdown="true">CSS</a>
+              <ul class="dropdown-menu">
+                <li><a href="#typography">Type</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#forms">Forms</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-dropdown="true">Patterns</a>
+              <ul class="dropdown-menu">
+                <li><a href="#media">Media</a></li>
+                <li><a href="#navigation">Navigation</a></li>
+                <li><a href="#alerts">Alerts</a></li>
+                <li><a href="#popovers">Popovers</a></li>
+                <li><a href="#autocomplete">Autocomplete</a></li>
+                <li><a href="#accordion">Accordion</a></li>
+                <li><a href="#datepicker">Datepicker</a></li>
+              </ul>
+            </li>
+            <li><a href="#javascript">Javascript</a></li>
+            <li><a href="#less">Using Less</a></li>
           </ul>
         </div>
       </div>
@@ -48,8 +76,12 @@
       ================================================== -->
       <header class="jumbotron masthead">
         <div class="inner">
-          <h1>Can I help you with your project?</h1>
-          <p class="lead">I'm a web developer in State College, PA.</p>
+          <h1>Bootstrap,<br> from Twitter</h1>
+          <p class="lead">Bootstrap is a responsive frontend toolkit from Twitter designed to kickstart web development, complete with core HTML, CSS, and JS for grids, type, forms, navigation, and many more components.</p>
+          <p class="download-info">
+            <a href="#" class="btn primary btn-large">Download on GitHub</a>
+            Currently v2.0.0
+          </p>
           <div class="benefits">
             <h4>Feature highlights</h4>
             <ul>
@@ -66,16 +98,21 @@
       </header>
 
       <ul class="quick-links">
-        <li><strong>Quick Links</strong></li>
-        <li><a href="https://github.com/judy">GitHub</a></li>
+        <li><strong>Quick links</strong></li>
+        <li><a href="https://github.com/twitter/bootstrap/">GitHub</a></li>
         <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
+        <li><a href="https://github.com/twitter/bootstrap/wiki/Roadmap">Roadmap</a></li>
+        <li><a href="https://github.com/twitter/bootstrap/wiki/Changelog">Changelog</a></li>
         <li class="divider">&middot;</li>
-        <li><strong>Social Media</strong></li>
-        <li><a href="http://twitter.com/mdo">@creativeembassy</a></li>
-        <li><a href="http://twitter.com/mdo">@creativeembassy</a></li>
+        <li><strong>Authors</strong></li>
+        <li><a href="http://twitter.com/mdo">@mdo</a></li>
+        <li><a href="http://twitter.com/fat">@fat</a></li>
         <li class="divider">&middot;</li>
         <li class="follow-btn">
-          <a href="https://twitter.com/creativeembassy" class="twitter-follow-button" data-width="145px" data-link-color="#0069D6" data-show-count="false">Follow @creativeembassy on Twitter</a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+          <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-width="145px" data-link-color="#0069D6" data-show-count="false">Follow @twbootstrap</a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+        </li>
+        <li class="tweet-btn">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitter.github.com/bootstrap/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
         </li>
       </ul>
 
