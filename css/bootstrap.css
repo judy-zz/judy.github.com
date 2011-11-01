@@ -2536,3 +2536,9 @@ h1 {
   -moz-box-shadow: inset 0px 1px 30px #000, inset 0px 1px 30px #000;
   box-shadow: inset 0px 1px 30px #000, inset 0px 1px 30px #000;
 }
+
+address {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 27px;
+}
