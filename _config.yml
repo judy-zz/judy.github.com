@@ -1,5 +1,0 @@
-auto: true
-source: _src
-destination: _public
-server: true
-server_port: 3000
