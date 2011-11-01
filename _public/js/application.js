@@ -18,16 +18,16 @@ $(document).ready(function() {
 	  { "src" : "img/bus04.jpg", "name": "Viewing an individual bus" }
 	]);
 	captcha_slider.setPhotos([
-	  { "src" : "img/captcha01.jpg", "name": "Homepage" },
-	  { "src" : "img/captcha02.jpg", "name": "Listing all of the captchaes" }
+	  { "src" : "img/captcha01.jpg", "name": "How it works" },
+	  { "src" : "img/captcha02.jpg", "name": "Homepage" }
 	]);
 	cat_slider.setPhotos([
 	  { "src" : "img/cat01.jpg", "name": "Homepage" },
-	  { "src" : "img/cat02.jpg", "name": "Listing all of the cates" }
+	  { "src" : "img/cat02.jpg", "name": "Signing up for a bowl game" }
 	]);
 	coolblue_slider.setPhotos([
 	  { "src" : "img/coolblue01.jpg", "name": "Homepage" },
-	  { "src" : "img/coolblue02.jpg", "name": "Listing all of the coolbluees" }
+	  { "src" : "img/coolblue02.jpg", "name": "Product Details" }
 	]);
 	lifeviz_slider.setSize(700, 300);
 	redi_slider.setSize(700, 300);
