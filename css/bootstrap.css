@@ -2592,6 +2592,10 @@ address {
   line-height: 27px;
 }
 
+address a{
+  text-decoration: underline;
+}
+
 #contact {
   margin-bottom: 400px;  
 }
