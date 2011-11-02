@@ -2428,8 +2428,8 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
     width: 100%;
     float: none;
   }
-  .brand {
-    display: none;
+  .navbar .brand {
+    display: none !important;
   }
   #overview .summary {
     width: auto !important;
