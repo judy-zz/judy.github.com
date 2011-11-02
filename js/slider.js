@@ -35,7 +35,7 @@
       return $('<div class="slide-image">' + (slide.link ? '<a href="' + slide.link + '" target="_blank">' : '') + '<img src="' + slide.src + '">' + (slide.name ? '<span class="caption">' + slide.name + '</span>' : '') + (slide.link ? '</a>' : '') + '</div>')[0];
     }));
     slider.find('.slide-pager').append($.map(o.slides, function(slide, i) {
-      return $('<a href="javascript:;">' + (i + 1) + '</a>')[0];
+      return $('<a href="javascript:;">&nbsp;</a>')[0];
     }));
     return slider;
   };
