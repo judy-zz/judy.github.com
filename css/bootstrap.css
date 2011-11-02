@@ -1297,22 +1297,18 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   position: relative;
   left: 0;
 }
-.nav > li {
+nav > a {
   display: block;
   float: left;
-}
-.nav a {
-  display: block;
-  float: none;
   padding: 10px 10px 11px;
   line-height: 19px;
   text-decoration: none;
 }
-.nav a:hover {
+nav a:hover {
   color: #ffffff;
   text-decoration: none;
 }
-.nav .active > a {
+nav a.active {
   background-color: #222;
   background-color: rgba(0, 0, 0, 0.5);
 }

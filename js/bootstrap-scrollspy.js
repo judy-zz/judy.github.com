@@ -25,7 +25,7 @@
   function ScrollSpy() {
     var process = $.proxy(this.process, this)
     this.$topbar = $('body')
-    this.selector = '[data-scrollspy] li > a'
+    this.selector = '[data-scrollspy] nav a'
     this.refresh()
     this.$topbar.delegate(this.selector, 'click', process)
     $window.scroll(process)
@@ -66,12 +66,11 @@
         this.activeTarget = target
 
         this.$topbar
-          .find(this.selector).parent('.active')
+          .find(this.selector)
           .removeClass('active')
 
         active = this.$topbar
           .find(this.selector + '[href="' + target + '"]')
-          .parent('li')
           .addClass('active')
 
         if ( active.parent('.dropdown-menu') )  {
