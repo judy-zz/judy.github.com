@@ -2436,6 +2436,10 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   .slide-images {
     width: 100%;
   }
+
+  #portfolio .piece img {
+    width: 100%;
+  }
 }
 @media (min-width: 480px) and (max-width: 768px) {
   .container {
@@ -2456,6 +2460,10 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   }
   #overview .summary {
     width: auto !important;
+  }
+
+  #portfolio .piece img {
+    width: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 940px) {
@@ -2586,6 +2594,10 @@ address {
 
 #contact {
   margin-bottom: 400px;  
+}
+
+#contact address .span4 {
+  margin-bottom: 1em;
 }
 
 
