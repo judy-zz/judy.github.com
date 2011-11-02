@@ -2440,6 +2440,10 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   #portfolio .piece img {
     width: 100%;
   }
+  .btn.large {
+    width: 100%;
+    margin-bottom: 1em;
+  }
 }
 @media (min-width: 480px) and (max-width: 768px) {
   .container {
