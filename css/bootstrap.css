@@ -2423,6 +2423,23 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   .form-horizontal .form-actions {
     padding-left: 0;
   }
+  .hero-unit img {
+    margin: 0 auto;
+    width: 100%;
+    float: none;
+  }
+  .brand {
+    display: none;
+  }
+  #overview .summary {
+    width: auto !important;
+  }
+  .nav a {
+    padding: 6px;
+  }
+  .slide-images {
+    width: 100%;
+  }
 }
 @media (min-width: 480px) and (max-width: 768px) {
   .container {
@@ -2437,6 +2454,12 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
     display: block;
     width: auto;
     margin: 0;
+  }
+  .slide-images {
+    width: auto;
+  }
+  #overview .summary {
+    width: auto !important;
   }
 }
 @media (min-width: 768px) and (max-width: 940px) {
@@ -2564,3 +2587,9 @@ address {
   font-weight: 200;
   line-height: 27px;
 }
+
+#contact {
+  margin-bottom: 400px;  
+}
+
+
