@@ -2552,6 +2552,32 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   }
 }
 
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+  .navbar, #overview, #contact, .notprintable { display: none; }
+  pre, blockquote, .job, .piece { display: block; page-break-inside: none; }
+  img { page-break-inside: avoid; }
+  section { padding-top: 0; }
+  #experience, #education { page-break-after: always; }
+  .job, .piece, .row, .page-header, .page-header h1 {
+    margin-bottom: 5px !important;
+    padding-bottom: 5px !important;
+  }
+  .piece .span3 { width: 100%; }
+  @page { margin: 0.5cm; }
+  p { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+  #portfolio .piece img { display: none;}
+  .printable { display: inline !important;}
+  #portfolio .piece:last-child:after { content: "The online version of this portfolio has pictures!"; display: inline;, float: left;}
+}
+
 h1 {
   text-shadow: 1px 1px 0px white;
 }
@@ -2568,6 +2594,12 @@ h1 {
 #overview .summary {
   display: block;
   width: 450px;
+}
+
+#address-header {
+  text-align: center;
+  margin: 0 auto;
+  width: 500px;
 }
 
 .job {
@@ -2606,16 +2638,13 @@ address {
   line-height: 27px;
 }
 
-address a {
-  text-decoration: underline;
-}
+address a { text-decoration: underline; }
 
-#contact {
-  margin-bottom: 400px;  
-}
+#contact { margin-bottom: 400px; }
 
-#contact address .span4 {
-  margin-bottom: 1em;
-}
+#contact address .span4 { margin-bottom: 1em; }
+
+/* This gets over-ridden by the print stylesheet. */
+.printable { display: none; }
 
 
