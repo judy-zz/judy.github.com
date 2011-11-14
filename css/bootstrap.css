@@ -2546,6 +2546,10 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   .offset12 {
     margin-left: 768px;
   }
+
+  #portfolio .piece img {
+    width: 100%;
+  }
 }
 
 h1 {
@@ -2572,6 +2576,12 @@ h1 {
 
 .piece {
   margin-bottom: 3em;
+}
+
+.piece .span3 h3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .piece img {
