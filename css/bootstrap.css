@@ -495,6 +495,7 @@ h1 small {
 h2 {
   font-size: 24px;
   line-height: 36px;
+  margin-top: -4px;
 }
 h2 small {
   font-size: 18px;
@@ -2391,6 +2392,10 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
     width: auto;
     padding: 0 15px;
   }
+  .hero-unit {
+    margin: 0 -10px;
+    padding: 60px 20px 20px;
+  }
   .row {
     margin-left: 0;
   }
@@ -2436,19 +2441,32 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   .slide-images {
     width: 100%;
   }
+  section {
+    padding-top: 1.5em;
+  }
 
   #portfolio .piece img {
     width: 100%;
   }
   .btn.large {
-    width: 100%;
+    width: auto;
     margin-bottom: 1em;
+  }
+  .job, .piece {
+    margin-bottom: 1em;
+  }
+  .page-header {
+    margin-bottom: 6px;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
   .container {
     width: auto;
     padding: 0 10px;
+  }
+  .hero-unit {
+    margin: 0 -10px;
+    padding: 60px 20px 30px;
   }
   .row {
     margin-left: 0;
@@ -2468,6 +2486,15 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 
   #portfolio .piece img {
     width: 100%;
+  }
+  section {
+    padding-top: 1.5em;
+  }
+  .job, .piece {
+    margin-bottom: 1em;
+  }
+  .page-header {
+    margin-bottom: 13px;
   }
 }
 @media (min-width: 768px) and (max-width: 940px) {
@@ -2608,6 +2635,10 @@ h1 {
 
 .piece {
   margin-bottom: 3em;
+}
+
+.job:last-child, .piece:last-child {
+  margin-bottom: 0;
 }
 
 .piece .span3 h3 {
