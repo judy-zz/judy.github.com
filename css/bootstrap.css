@@ -2675,6 +2675,11 @@ address a { text-decoration: underline; }
 
 #contact address .span4 { margin-bottom: 1em; }
 
+.dates {font-style: italic;}
+
+/* Hanging punctuation. */
+ul { list-style: square outside;}
+
 /* This gets over-ridden by the print stylesheet. */
 .printable { display: none; }
 
