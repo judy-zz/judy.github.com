@@ -1180,9 +1180,10 @@ table .headerSortUp.purple, table .headerSortDown.purple {
  * ---------------------------------------------------------------------------- */
 .navbar {
   height: 40px;
-  overflow: visible;
+  overflow: hidden;
 }
 .navbar-inner {
+  height: 40px;
   background-color: #222222;
   background-color: #222222;
   background-image: -khtml-gradient(linear, left top, left bottom, from(#333333), to(#222222));
@@ -2384,6 +2385,9 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
 }
 
+.mobile {
+  display: none;
+}
 /* Responsive.less
  * For phone and tablet devices
  * ------------------------------------------------------------- */
@@ -2391,6 +2395,9 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   .container {
     width: auto;
     padding: 0 15px;
+  }
+  .mobile {
+    display: inline !important;
   }
   .hero-unit {
     margin: 0 -10px;
@@ -2429,9 +2436,6 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
     width: 100%;
     float: none;
   }
-  .navbar .brand {
-    display: none !important;
-  }
   #overview .summary {
     width: auto !important;
   }
@@ -2458,12 +2462,17 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   .page-header {
     margin-bottom: 6px;
   }
-  #contactme { display: none; }
+  .navbar .brand { display: none; }
+  #overview-link { display: none; }
+  #contactme-link { display: none; }
 }
 @media (min-width: 480px) and (max-width: 768px) {
   .container {
     width: auto;
     padding: 0 10px;
+  }
+  .mobile {
+    display: inline !important;
   }
   .hero-unit {
     margin: 0 -10px;
@@ -2497,7 +2506,8 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   .page-header {
     margin-bottom: 13px;
   }
-  #contactme { display: none; }
+  #overview-link { display: none; }
+  #contactme-link { display: none; }
 }
 @media (min-width: 768px) and (max-width: 940px) {
   .container {
@@ -2579,7 +2589,7 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   #portfolio .piece img {
     width: 100%;
   }
-  #contactme { display: none; }
+  #contactme-link { display: none; }
 }
 
 @media print {
@@ -2606,7 +2616,7 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   #portfolio .piece img { display: none;}
   .printable { display: inline !important;}
   #portfolio .piece:last-child:after { content: "The online version of this portfolio has pictures!"; display: inline;, float: left;}
-  #contactme {
+  #contactme-link {
     display: none;
   }
 }
@@ -2689,7 +2699,7 @@ ul { list-style: square outside;}
 /* This gets over-ridden by the print stylesheet. */
 .printable { display: none; }
 
-#contactme { 
+#contactme-link { 
   float: right;
   font-size: 20px;
   color: #BFBFBF;
@@ -2708,6 +2718,7 @@ ul { list-style: square outside;}
 .code-example h2 {
   text-indent: -9999px;
   position: absolute;
+  top: 10px;
 }
 .code-example p {
   background-color: rgba(255, 255, 255, 0.5);
@@ -2715,19 +2726,16 @@ ul { list-style: square outside;}
   height: 70px;
 }
 #karma-code h2 {
-  top: 0px;
   width: 220px;
   height: 74px;
   background: url("../img/logo-karma.png") white no-repeat;
 }
 #rypr-code h2 {
-  top: 0;
   width: 220px;
   height: 81px;
   background: url("../img/logo-rypr.png") white no-repeat;
 }
 #lifeviz-code h2 {
-  top: 0;
   left: -26px;
   width: 408px;
   height: 73px;

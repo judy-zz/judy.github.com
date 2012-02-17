@@ -11,6 +11,9 @@
     <![endif]-->
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
     <link href="css/bootstrap.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/underscore.js"></script>
+    <script type="text/javascript" src="js/bootstrap-scrollspy.js"></script>
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -32,12 +35,12 @@
         <div class="container">
           <a class="brand" href="#overview">Clinton Judy</a>
           <nav>
-            <a id="overviewlink" class="active" href="#overview">Overview</a>
+            <a id="overview-link" class="active" href="#overview">Overview</a>
             <a href="#code">Code</a>
             <a href="#experience">Experience</a>
             <a href="#education">Education</a>
             <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact Me</a>
+            <a href="#contact">Contact</a>
             <a id="contactme-link" href="mailto:clinton@j-udy.com">clinton@j-udy.com</a>
           </nav>
         </div>
@@ -50,7 +53,7 @@
   <img src="img/bw.jpg" alt="The smiling face of Clinton Judy." />
   <h1>Hacker for Hire</h1>
   <p class="summary">
-    I'm a web developer and consultant living in State College, Pennsylvania. I've been programming in Ruby on Rails for over 3 years; I love the practice of software craftsmanship, and I strive to amaze every client I work with. Let's build stuff together!
+    <span class="mobile">My name is <strong>Clinton Judy.</strong></span> I'm a web developer and consultant living in State College, Pennsylvania. I've been programming in Ruby on Rails for over 3 years; I love the practice of software craftsmanship, and I strive to amaze every client I work with. Let's build stuff together!
   </p>
   <p>
     <a class="btn primary large" href="http://www.linkedin.com/in/creativeembassy">LinkedIn &raquo;</a>
@@ -97,11 +100,11 @@
 
 <section id="experience">
   <div class="page-header">
-    <h1>Experience</h1>
+    <h1>Work Experience</h1>
   </div>
 
   <div class="row job">
-    <div class="span3">
+    <div class="span4">
       <h2 class="jobtitle">Educator, Consultant</h2>
       <div class="company">
         <h3><a href="http://clinton.j-udy.com/">Freelance</a></h3>
@@ -109,7 +112,7 @@
       </div>
       <div class="dates">May 2007 &ndash; Present</div>
     </div>
-    <div class="span9">
+    <div class="span8">
       <ul class="completed">
         <li>Present topics at the State College Ruby Group regularly, with a series of talks on subjects like &ldquo;New Elements in HTML5 and CSS3,&rdquo; &ldquo;EventMachine,&rdquo; &ldquo;ActiveRecord,&rdquo; &ldquo;Node.JS,&rdquo; &ldquo;CoffeeScript,&rdquo; and &ldquo;How to use Pry&rdquo;.</li>
         <li>Tutored students in programming with Ruby and advanced HTML and CSS.</li>
@@ -120,7 +123,7 @@
   </div>
 
   <div class="row job">
-    <div class="span3">
+    <div class="span4">
       <h2 class="jobtitle">Web Developer</h2>
       <div class="company">
         <h3><a href="http://www.westarete.com/">West Arete</a></h3>
@@ -128,7 +131,7 @@
       </div>
       <div class="dates">February 2009 &ndash; October 2011</div>
     </div>
-    <div class="span9">
+    <div class="span8">
       <ul class="completed">
         <li>Estimated, designed, developed, and launched websites out of several experimental technologies and ideas with MIT, Penn State, the Department of Transportation, and the Marine Biological 
       Laboratory.</li>
@@ -141,7 +144,7 @@
   </div>
 
   <div class="row job">
-    <div class="span3">
+    <div class="span4">
       <h2 class="jobtitle">Web Developer, Technician</h2>
       <div class="company">
         <h3><a href="http://www.cwswebservices.net/">CWS Web Services</a></h3>
@@ -149,7 +152,7 @@
       </div>
       <div class="dates">November 2008 &ndash; January 2009</div>
     </div>
-    <div class="span9">
+    <div class="span8">
       <ul class="completed">
         <li>Developed a tool to manage virtual machines and application sequencing.</li>
         <li>Installed, configured, networked, and supported hardware for local businesses, including a 40+ thin&ndash;client installation at a free health clinic.</li>
@@ -158,7 +161,7 @@
   </div>
 
   <div class="row job">
-    <div class="span3">
+    <div class="span4">
       <h2 class="jobtitle">Web Developer, Technician</h2>
       <div class="company">
         <h3>Glenn O. Hawbaker</h3>
@@ -166,7 +169,7 @@
       </div>
       <div class="dates">August 2007 &ndash; November 2008</div>
     </div>
-    <div class="span9">
+    <div class="span8">
       <ul class="completed">
         <li>Developed applications to assist with company roles, including resume management and production scheduling.</li>
         <li>Created and maintained the company intranet.</li>
@@ -177,7 +180,7 @@
   </div>
 
   <div class="row job notprintable">
-    <div class="span3">
+    <div class="span4">
       <h2 class="jobtitle">Graphic Designer</h2>
       <div class="company">
         <h3>Menu Master</h3>
@@ -185,7 +188,7 @@
       </div>
       <div class="dates">February 2007 &ndash; May 2007</div>
     </div>
-    <div class="span9">
+    <div class="span8">
       <ul class="completed">
         <li>Designed eye-catching menus, place-mats and takeout menus.</li>
         <li>Communicated with 14-20 listed advertisers per project to ensure each advertiser was happy with the layout of their completed design.</li>
@@ -195,15 +198,15 @@
   </div>
 
   <div class="row job">
-    <div class="span3">
-      <h2 class="jobtitle">Web Developer, Graphic Designer</h2>
+    <div class="span4">
+      <h2 class="jobtitle">Web Developer,<br>Graphic Designer</h2>
       <div class="company">
         <h3><a href="http://clinton.j-udy.com/">Freelance</a></h3>
         <span class="location">State College, PA</span>
       </div>
       <div class="dates">October 2004 &ndash; February 2007</div>
     </div>
-    <div class="span9">
+    <div class="span8">
       <ul class="completed">
         <li>Designed a variety of graphic and web designs for local businesses and non-profit organizations, including a newspaper flyer for a muzzleloader supply store, a menu for a local diner, websites for student organizations, and wall flyers for student-run events.</li>
       </ul>
@@ -214,19 +217,19 @@
 
 <section id="education" class="education">
   <div class="page-header">
-    <h1>Education</h1>
+    <h1>College Education</h1>
   </div>
 
   <div class="row school">
-    <div class="span3">
-      <h2 class="major">Computer Science, Graphic and Online Design</h2>
+    <div class="span4">
+      <h2 class="major">Computer Science,<br>Graphic &amp; Online Design</h2>
       <div class="name">
         <h3>Lock Haven University</h3>
         <span class="location">Lock Haven, PA</span>
       </div>
       <div class="dates">August 2004 &ndash; May 2007</div>
     </div>
-    <div class="span9">
+    <div class="span8">
         <p class="courses">
           As a graphic and web designer, I developed an appreciation of design principles and typography, and came away with a very serious eye towards my own work. For each assignment (like magazine articles or logos), we were given a few days to work on each piece. But &ldquo;turning in&rdquo; your work involved standing at the front of the class, presenting your piece, and watching idly while your classmates ruthlessly tore into your design. You would hear that your piece was ineffective at its goals, or that you didn't use space efficiently, or that it &ldquo;just sucked&rdquo;. It was an incredibly humbling experience, and gave me a fantastic appreciation of the amount of work it took to make something effective.
         </p>
@@ -237,7 +240,7 @@
 
 <section id="portfolio">
   <div class="page-header">
-    <h1>Portfolio</h1>
+    <h1>Portfolio of Projects</h1>
   </div>
 
   <div class="row piece">
@@ -309,7 +312,7 @@
 
 <section id="contact">
   <div class="page-header">
-    <h1>Contact Me</h1>
+    <h1>Contact Me!</h1>
   </div>
   <address class="row vcard">
     <div class="span4">
