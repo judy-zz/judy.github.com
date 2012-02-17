@@ -2695,3 +2695,41 @@ ul { list-style: square outside;}
   color: #BFBFBF;
   font-weight: 200;
 }
+.button.primary.large:after {
+  content:" &raquo;";
+}
+.code-example {
+  display: block;
+  padding: 80px 15px 15px;
+  width: 270px;
+  height: 180px;
+  position: relative;
+}
+.code-example h2 {
+  text-indent: -9999px;
+  position: absolute;
+}
+.code-example p {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 15px 0;
+  height: 70px;
+}
+#karma-code h2 {
+  top: 0px;
+  width: 220px;
+  height: 74px;
+  background: url("../img/logo-karma.png") white no-repeat;
+}
+#rypr-code h2 {
+  top: 0;
+  width: 220px;
+  height: 81px;
+  background: url("../img/logo-rypr.png") white no-repeat;
+}
+#lifeviz-code h2 {
+  top: 0;
+  left: -26px;
+  width: 408px;
+  height: 73px;
+  background: url("../img/logo-lifeviz.png") white no-repeat;
+}
