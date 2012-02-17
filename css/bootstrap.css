@@ -2463,8 +2463,9 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
     margin-bottom: 6px;
   }
   .navbar .brand { display: none; }
-  #overview-link { display: none; }
-  #contactme-link { display: none; }
+  .not-mobile {
+    display: none;
+  }
 }
 @media (min-width: 480px) and (max-width: 768px) {
   .container {
@@ -2506,8 +2507,9 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   .page-header {
     margin-bottom: 13px;
   }
-  #overview-link { display: none; }
-  #contactme-link { display: none; }
+  .not-mobile {
+    display: none;
+  }
 }
 @media (min-width: 768px) and (max-width: 940px) {
   .container {
@@ -2589,7 +2591,9 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   #portfolio .piece img {
     width: 100%;
   }
-  #contactme-link { display: none; }
+  .not-mobile {
+    display: none;
+  }
 }
 
 @media print {
@@ -2616,7 +2620,7 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   #portfolio .piece img { display: none;}
   .printable { display: inline !important;}
   #portfolio .piece:last-child:after { content: "The online version of this portfolio has pictures!"; display: inline;, float: left;}
-  #contactme-link {
+  .not-mobile {
     display: none;
   }
 }
@@ -2742,4 +2746,29 @@ ul { list-style: square outside;}
   width: 408px;
   height: 73px;
   background: url("../img/logo-lifeviz.png") white no-repeat;
+}
+figure {
+  position: relative;
+  padding-bottom: 6em;
+}
+figure blockquote {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+figure blockquote:before {
+  content: "“";
+  position: absolute;
+  left: 12px;
+}
+figure blockquote:after {
+  content: "”";
+}
+figcaption {
+  position: absolute;
+  right: 0;
+  text-align: right;
+  display: block;
+}
+figcaption aside {
+  font-style: italic;
 }
