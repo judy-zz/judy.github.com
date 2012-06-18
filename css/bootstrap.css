@@ -2691,7 +2691,14 @@ address {
 
 address a { text-decoration: underline; }
 
-#contact { margin-bottom: 400px; }
+#recommendations .major {
+  font-size: 1.3em;
+}
+
+#contact {
+  padding-top: 2em;
+  margin-bottom: 4em;
+}
 
 #contact address .span4 { margin-bottom: 1em; }
 
@@ -2749,10 +2756,10 @@ ul { list-style: square outside;}
 }
 figure {
   position: relative;
-  padding-bottom: 6em;
+  padding-bottom: 4em;
 }
 figure blockquote {
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.5em;
 }
 figure blockquote:before {
