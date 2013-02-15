@@ -2598,30 +2598,62 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 
 @media print {
   * {
-    background: transparent !important;
+    /*background: transparent;*/
     color: black !important;
     text-shadow: none !important;
     filter:none !important;
     -ms-filter: none !important;
   }
   .navbar, #overview, #contact, .notprintable { display: none; }
-  pre, blockquote, .job, .piece { display: block; page-break-inside: none; }
-  img { page-break-inside: avoid; }
+  pre, blockquote, .piece { display: block; page-break-inside: none; }
+  img, .job { page-break-inside: avoid; }
   section { padding-top: 0; }
-  #experience, #education { page-break-after: always; }
+  .page-header + * {
+    margin-top: 2em !important;
+  }
+  .code-example {
+    display: inline-block !important;
+    height: 200px !important;
+    width: 2.1in !important;
+  }
+  .code-example h2 {
+    display: block;
+    text-indent: 0px;
+    color: black;
+    position: static;
+    background: none;
+    top: 0px;
+    background-color: black;
+  }
+  .code-example h2 {
+    display: block;
+    text-indent: 0px;
+    color: black;
+    position: static;
+    background: none;
+    top: 0px;
+    background-color: black;
+  }
+  #experience, #portfolio { page-break-after: always; }
   .job, .piece, .row, .page-header, .page-header h1 {
     margin-bottom: 5px !important;
     padding-bottom: 5px !important;
   }
+  .btn { display: none; }
   .piece .span3 { width: 100%; }
   @page { margin: 0.5cm; }
   p { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
   #portfolio .piece img { display: none;}
   .printable { display: inline !important;}
-  #portfolio .piece:last-child:after { content: "The online version of this portfolio has pictures!"; display: inline;, float: left;}
   .not-mobile {
     display: none;
+  }
+  #recommendations figure {margin-bottom: 2em;}
+  #recommendations .well{
+    background-color: white;
+    border: none;
+    box-shadow: none;
   }
 }
 
@@ -2723,7 +2755,7 @@ ul { list-style: square outside;}
   display: block;
   padding: 80px 15px 15px;
   width: 270px;
-  height: 200px;
+  height: 180px;
   position: relative;
 }
 .code-example h2 {
@@ -2739,19 +2771,19 @@ ul { list-style: square outside;}
   top: 5px;
   width: 220px;
   height: 74px;
-  background: url("../img/logo-karma.png") white no-repeat;
+  background: url("/img/logo-karma.png") white no-repeat;
 }
 #artfully-code h2 {
   top: 18px;
   width: 260px;
   height: 76px;
-  background: url("../img/logo-artfully.png") white no-repeat;
+  background: url("/img/logo-artfully.png") white no-repeat;
 }
 #rypr-code h2 {
   top: 10px;
   width: 220px;
   height: 81px;
-  background: url("../img/logo-rypr.png") white no-repeat;
+  background: url("/img/logo-rypr.png") white no-repeat;
 }
 #lifeviz-code h2 {
   left: -26px;
