@@ -2741,6 +2741,12 @@ ul { list-style: square outside;}
   height: 74px;
   background: url("../img/logo-karma.png") white no-repeat;
 }
+#artfully-code h2 {
+  top: 18px;
+  width: 260px;
+  height: 76px;
+  background: url("../img/logo-artfully.png") white no-repeat;
+}
 #rypr-code h2 {
   top: 10px;
   width: 220px;
