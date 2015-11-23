@@ -1855,15 +1855,15 @@ button.mfp-arrow:active {
 /*---------------------------------------------------------------------*/
 /*  6.6. SECTION - REFERENCES
 /*---------------------------------------------------------------------*/
-#references {
+#testimonials {
   background-image: url('../images/bg-references.jpg');
 }
 
-#references .section-wrapper > .section-content {
+#testimonials .section-wrapper > .section-content {
   padding-bottom: 160px;
 }
 
-#references .flexslider.references {
+#testimonials .flexslider.references {
   margin-top: 30px;
   margin-bottom: 0px;
   background: transparent;
@@ -1874,11 +1874,11 @@ button.mfp-arrow:active {
   box-shadow: none;
 }
 
-#references .flexslider.references:hover .flex-direction-nav-custom > li > a {
+#testimonials .flexslider.references:hover .flex-direction-nav-custom > li > a {
   opacity: 1;
 }
 
-#references .flexslider.references > .slides > .item .profile {
+#testimonials .flexslider.references > .slides > .item .profile {
   position: absolute;
   top: 0;
   left: 0;
@@ -1886,7 +1886,7 @@ button.mfp-arrow:active {
   height: 120px;
 }
 
-#references .flexslider.references > .slides > .item .profile:before {
+#testimonials .flexslider.references > .slides > .item .profile:before {
   display: block;
   position: absolute;
   content: '\ec98';
@@ -1907,23 +1907,23 @@ button.mfp-arrow:active {
   border-radius: 50%;
 }
 
-#references .flexslider.references > .slides > .item .profile > img {
+#testimonials .flexslider.references > .slides > .item .profile > img {
   display: block;
   width: 120px;
   height: 120px;
 }
 
-#references .flexslider.references > .slides > .item .content {
+#testimonials .flexslider.references > .slides > .item .content {
   color: #a1a1a1;
 }
 
 @media (min-width: 768px) {
-  #references .flexslider.references > .slides > .item .content {
+  #testimonials .flexslider.references > .slides > .item .content {
     padding-left: 160px;
   }
 }
 
-#references .flexslider.references > .slides > .item .content h3 {
+#testimonials .flexslider.references > .slides > .item .content h3 {
   margin-bottom: 20px;
   color: #ffffff;
   text-transform: uppercase;
@@ -1931,47 +1931,47 @@ button.mfp-arrow:active {
 }
 
 @media (max-width: 767px) {
-  #references .flexslider.references > .slides > .item .content h3 {
+  #testimonials .flexslider.references > .slides > .item .content h3 {
     text-align: center;
   }
 }
 
-#references .flexslider.references > .slides > .item .content p {
+#testimonials .flexslider.references > .slides > .item .content p {
   font-size: 22px;
   font-style: italic;
   text-align: center;
 }
 
 @media (min-width: 768px) {
-  #references .flexslider.references > .slides > .item .content p {
+  #testimonials .flexslider.references > .slides > .item .content p {
     text-align: justify;
   }
 }
 
-#references .flexslider.references > .slides > .item .content p.source {
+#testimonials .flexslider.references > .slides > .item .content p.source {
   margin-top: 20px;
   color: #ffffff;
   font-size: 18px;
 }
 
-#references .flexslider.references > .slides > .item .content p.source > span {
+#testimonials .flexslider.references > .slides > .item .content p.source > span {
   color: #a1a1a1;
 }
 
-#references .flexslider.references .flexslider-controls > .flex-control-nav {
+#testimonials .flexslider.references .flexslider-controls > .flex-control-nav {
   bottom: -60px;
 }
 
-#references .flexslider.references .flexslider-controls > .flex-control-nav > li {
+#testimonials .flexslider.references .flexslider-controls > .flex-control-nav > li {
   position: relative;
   margin: 0 3px;
 }
 
-#references .flexslider.references .flexslider-controls > .flex-control-nav > li:hover {
+#testimonials .flexslider.references .flexslider-controls > .flex-control-nav > li:hover {
   cursor: pointer;
 }
 
-#references .flexslider.references .flexslider-controls > .flex-control-nav > li:before {
+#testimonials .flexslider.references .flexslider-controls > .flex-control-nav > li:before {
   display: block;
   position: absolute;
   content: '';
@@ -1984,17 +1984,17 @@ button.mfp-arrow:active {
   opacity: 0.7;
 }
 
-#references .flexslider.references .flexslider-controls > .flex-control-nav > li > img {
+#testimonials .flexslider.references .flexslider-controls > .flex-control-nav > li > img {
   width: 40px;
   height: 40px;
   border-radius: 3px;
 }
 
-#references .flexslider.references .flexslider-controls > .flex-control-nav > li.flex-active:before {
+#testimonials .flexslider.references .flexslider-controls > .flex-control-nav > li.flex-active:before {
   opacity: 0.2;
 }
 
-#references .flexslider.references > .flex-direction-nav-custom {
+#testimonials .flexslider.references > .flex-direction-nav-custom {
   position: absolute;
   z-index: 15;
   top: 0;
@@ -2002,32 +2002,32 @@ button.mfp-arrow:active {
   margin-top: -5px;
 }
 
-#references .flexslider.references > .flex-direction-nav-custom > li {
+#testimonials .flexslider.references > .flex-direction-nav-custom > li {
   padding: 0px;
 }
 
-#references .flexslider.references > .flex-direction-nav-custom > li:hover {
+#testimonials .flexslider.references > .flex-direction-nav-custom > li:hover {
   cursor: pointer;
 }
 
-#references .flexslider.references > .flex-direction-nav-custom > li:hover > a {
+#testimonials .flexslider.references > .flex-direction-nav-custom > li:hover > a {
   color: #ffffff;
 }
 
-#references .flexslider.references > .flex-direction-nav-custom > li > a {
+#testimonials .flexslider.references > .flex-direction-nav-custom > li > a {
   color: #a1a1a1;
   font-size: 35px;
 }
 
-#references .flexslider.references > .flex-direction-nav-custom > li > a.flex-prev {
+#testimonials .flexslider.references > .flex-direction-nav-custom > li > a.flex-prev {
   padding-right: 20px;
 }
 
-#references.parallax-yes {
+#testimonials.parallax-yes {
   background: none;
 }
 
-#references.parallax-yes > .parallax > .bcg {
+#testimonials.parallax-yes > .parallax > .bcg {
   background-image: url('../images/bg-references.jpg');
 }
 
