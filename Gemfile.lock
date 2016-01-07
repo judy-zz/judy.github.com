@@ -10,7 +10,7 @@ GEM
     em-websocket (0.3.8)
       addressable (>= 2.1.1)
       eventmachine (>= 0.12.9)
-    eventmachine (0.12.10)
+    eventmachine (1.0.8)
     fast-stemmer (1.0.0)
     ffi (1.1.2)
     guard (1.2.3)
@@ -53,3 +53,6 @@ DEPENDENCIES
   guard-livereload
   haml
   jekyll
+
+BUNDLED WITH
+   1.10.6
