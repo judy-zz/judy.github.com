@@ -13,6 +13,7 @@ GEM
     eventmachine (1.0.8)
     fast-stemmer (1.0.0)
     ffi (1.1.2)
+    ffi (1.1.2-x86-mingw32)
     guard (1.2.3)
       listen (>= 0.4.2)
       thor (>= 0.14.6)
@@ -48,11 +49,9 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   guard-livereload
   haml
   jekyll
-
-BUNDLED WITH
-   1.10.6
