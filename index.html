@@ -28,6 +28,7 @@
   <link href="assets/plugins/animate-css/animate.min.css" rel="stylesheet" type="text/css">
   <link href="assets/plugins/magnificPopup/magnific-popup.css" rel="stylesheet" type="text/css">
   <link href="assets/plugins/flexSlider/flexslider.css" rel="stylesheet" type="text/css">
+  <link href="assets/plugins/morphext/morphext.css" rel="stylesheet" type="text/css">
 
   <!-- Main CSS -->
   <link href="assets/css/berg.css" rel="stylesheet" type="text/css">
@@ -49,17 +50,20 @@
     <![endif]-->
 
 
+  <!-- Top image was taken by Robert J. La Verghetta, and is licensed under the Creative Commons
+       Attribution-Share Alike 3.0 Unported license. -->
   <header id="home" class="hero">
     <div class="pattern-overlay"></div>
 
     <div class="hero-body">
       <div class="hero-text text-center">
-        <h1 class="small">
-          I'm Clinton Judy
-          <span class="blinker"></span>
+        <h1>
+          I'm Clinton Judy<span class="blinker"></span>
         </h1>
 
-        <h1>Web Dev &amp; Dev Ops</h1>
+        <h1 class="small">
+          <span id="js-rotating">Web Dev | Dev Ops</span>
+        </h1>
 
         <p>Father, hackerspace founder, songwriter, robotics instructor&hellip;</p>
 
@@ -138,29 +142,29 @@
                   <span class="divider"></span>
                   <p class="text-grey">
                     My last job was at Agrian, writing services to shuffle massive amounts of agricultural data and
-                    make farmers more productive. My ideal position allows me to start doing front end work again,
+                    make farmers more productive. My ideal position allows me to start doing front end work again, build
+                    even larger distributed back ends to handle more work, and continue pushing the boundaries of what
+                    the web can do.
                   </p>
                   <p class="text-grey">
                     I'm a frequent open source contributor, a robotics instructor and father of two (who I have also
                     taught to code!) I love the practice of software craftsmanship, and I strive to amaze every client
                     I work with. Let's build stuff together!
                   </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="contact-details padding-right-yes">
-              <div class="row">
-                <div class="col-sm-6 col-md-5">
-                  <h4 class="uppercase">Contact Details</h4>
-
                   <ul class="list-unstyled text-grey">
                     <li>Clinton Judy</li>
                     <li>814.531.JUDY</li>
                     <li><a href="mailto:clinton@judy.io">clinton@judy.io</a></li>
                   </ul>
                 </div>
+              </div>
+            </div>
+
 <!-- TODO: Make downloadable version.  -->
+            <div class="contact-details padding-right-yes">
+              <div class="row">
+                <div class="col-sm-6 col-md-5">
+                </div>
                 <!-- <div class="col-sm-6 col-md-7">
                   <a href="#" class="btn btn-lg btn-custom">
                     <i class="icon-File-Download"></i> Download Resume
@@ -188,9 +192,6 @@
         <div class="row">
           <div class="col-md-12 text-center">
             <h2 class="section-title uppercase">Open Source Projects</h2>
-
-            <!-- <p class="section-subtitle">I'm looking to expand my portfolio while I'm on top and while I'm young.</p> -->
-
             <span class="divider center"></span>
           </div>
         </div>
@@ -588,11 +589,7 @@
 
         <div class="row work-experience">
           <div class="col-md-10 col-md-offset-1">
-            <!-- <h3>
-                            Work Experience
-                            <br>
-                            2006 - Now
-                        </h3> -->
+            <!-- <h3>Work Experience<br>2006 - Now</h3> -->
 
             <div class="panel-group resume" id="work">
               <div class="resume-item">
@@ -1434,6 +1431,7 @@
   <script src="assets/plugins/magnificPopup/jquery.magnific-popup.min.js"></script>
   <script src="assets/plugins/flexSlider/jquery.flexslider-min.js"></script>
   <script src="assets/plugins/countTo/jquery.countTo.js"></script>
+  <script src="assets/plugins/morphext/morphext.min.js"></script>
 
   <!-- Main JS -->
   <script src="assets/js/main.js"></script>
