@@ -7,10 +7,12 @@
 
   <meta name="keywords" content="clinton, judy, resume, cv">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-
   <meta name="description" content="A CV for Clinton Judy, a web developer in State College, Pennsylvania.">
   <meta name="author" content="Clinton Judy">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- Verify domain for pinterest. -->
+  <meta name="p:domain_verify" content="2a26918ca5424ea0e3b434986bf0994b"/>
 
   <!-- Google Font -->
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
@@ -34,7 +36,7 @@
   <link href="assets/css/berg.css" rel="stylesheet" type="text/css">
 
   <!-- Color CSS -->
-  <!--<link href="assets/css/colors/green.css" rel="stylesheet" type="text/css">-->
+  <link href="assets/css/colors/blue.css" rel="stylesheet" type="text/css">
 
   <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 8]>
@@ -53,6 +55,7 @@
   <!-- Top image was taken by Robert J. La Verghetta, and is licensed under the Creative Commons
        Attribution-Share Alike 3.0 Unported license. -->
   <header id="home" class="hero">
+    <!-- <canvas id="demo-canvas" width="1440" height="403"></canvas> -->
     <div class="pattern-overlay"></div>
 
     <div class="hero-body">
@@ -62,10 +65,10 @@
         </h1>
 
         <h1 class="small">
-          <span id="js-rotating">Web Dev | Dev Ops</span>
+          <span id="js-rotating">Web Developer | Developer Operations | Full&ndash;Stack Engineer | Data Wrangler | Stylesheet Scientist</span>
         </h1>
 
-        <p>Father, hackerspace founder, songwriter, robotics instructor&hellip;</p>
+        <p>Father, hackerspace founder, security enthusiast, robotics instructor&hellip;</p>
 
         <div class="page-scroll">
           <a href="#profile" class="btn btn-lg btn-custom">Get to Know Me</a>
@@ -768,13 +771,12 @@
 
   <section id="testimonials" class="section bg-image-yes">
     <div class="container-fluid section-wrapper">
+
       <div class="section-content">
         <div class="row">
           <div class="col-md-12 text-center">
+
             <h2 class="section-title uppercase">Testimonials</h2>
-
-            <!-- <p class="section-subtitle">Testimonials are enough to convince people for now.</p> -->
-
             <span class="divider center"></span>
           </div>
         </div>
@@ -1376,12 +1378,6 @@
           <ul class="list-inline social-icons">
             <li>
               <div class="item">
-                <a href="//www.facebook.com/clinton.judy" target="_blank"><i class="fa fa-facebook"></i></a>
-              </div>
-            </li>
-
-            <li>
-              <div class="item">
                 <a href="//twitter.com/creativeembassy" target="_blank"><i class="fa fa-twitter"></i></a>
               </div>
             </li>
@@ -1394,13 +1390,19 @@
 
             <li>
               <div class="item">
-                <a href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
+                <a href="//www.github.io/judy" target="_blank"><i class="fa fa-github"></i></a>
               </div>
             </li>
 
             <li>
               <div class="item">
-                <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                <a href="//www.pinterest.com/clinton_judy" target="_blank"><i class="fa fa-pinterest"></i></a>
+              </div>
+            </li>
+
+            <li>
+              <div class="item">
+                <a href="//www.goodreads.com/user/show/18854851-clinton" target="_blank"><i class="fa fa-book"></i></a>
               </div>
             </li>
           </ul>
@@ -1432,6 +1434,11 @@
   <script src="assets/plugins/flexSlider/jquery.flexslider-min.js"></script>
   <script src="assets/plugins/countTo/jquery.countTo.js"></script>
   <script src="assets/plugins/morphext/morphext.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/easing/EasePack.min.js"></script>
+  <script src="assets/plugins/rAF.js"></script>
+
+  <script src="assets/js/text-rotator.js"></script>
 
   <!-- Main JS -->
   <script src="assets/js/main.js"></script>
