@@ -1072,12 +1072,12 @@ header.hero.parallax-yes > .parallax > .bcg {
 }
 
 #profile .contact-details a.btn-custom {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 @media (min-width: 768px) {
   #profile .contact-details a.btn-custom {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 }
 
