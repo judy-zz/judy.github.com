@@ -1,0 +1,20 @@
+RE: Job Number 57828
+
+To whom it may concern,
+
+I'm applying to the position of Research and Development Engineer for ARL. For nearly a decade, I've been taking extreme project requirements, large amounts of complex data, and experimental/scientific code (or even just the academic article), and turning those elements into an easily usable, well maintained web application for end users. I'm also a frequent open source contributor, and I'm always playing with cutting-edge technology and applying it to experiments at home. I love doing this kind of work, and I'm excited to apply for this position.
+
+My last career involved the latest research in precision agriculture. I developed strategies for handling data from a variety of sources (lab data on soil and plant samples, harvest yields, etc.) in one service oriented application. In another SOA, we collected user requirements for next year's crop, and ran algorithms to find ideal yield/fertilizing goals. I was primarily responsible for rewriting that code to run idempotently in multiple jobs, dramatically decreasing wait times and the amount of resources required per machine.
+
+I ran the Ruby Group of State College for many years, and gave talks on numerous topics every month. I frequently had employees from ARL show up with an interest in learning more scripting techniques. I'm also the founder of the Make Space, a maker/hacker space downtown, and we've also had a number of ARL employees show up for events and become members. In the past, I made web development a career and research a serious hobby. I'd love to make research my career as well.
+
+I'd love to meet with you and see if I'd be a good fit for your team. I look forward to speaking with you further!
+
+Thanks for your time,
+
+Clinton Judy
+
+clinton@judy.io
+814.531.JUDY
+http://judy.github.io
+
