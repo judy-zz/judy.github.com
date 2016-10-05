@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+  #profile .contact-details a.btn-custom {
+    margin-top: 20px;
+  }
+}
+
+#opensource, #closedsource {
+  background-color: rgb(23, 23, 23);
+}
+
+#resume {
+    background-color: #0d0c0d;
+}

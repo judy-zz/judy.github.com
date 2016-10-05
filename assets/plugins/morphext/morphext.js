@@ -1,20 +1,28 @@
 /*!
- * Morphext v2.0.0 - Text Rotating Plugin for jQuery
+ * Morphext - Text Rotating Plugin for jQuery
  * https://github.com/MrSaints/Morphext
  *
  * Built on jQuery Boilerplate
  * http://jqueryboilerplate.com/
  *
- * Copyright 2013 Ian Lai and other contributors
+ * Copyright 2014 Ian Lai and other contributors
  * Released under the MIT license
  * http://ian.mit-license.org/
  */
-;(function ($, window, document, undefined) {
+
+/*eslint-env browser */
+/*global jQuery:false */
+/*eslint-disable no-underscore-dangle */
+
+(function ($) {
+    "use strict";
+
     var pluginName = "Morphext",
         defaults = {
             animation: "bounceIn",
             separator: ",",
-            speed: 2000
+            speed: 2000,
+            complete: $.noop
         };
 
     function Plugin (element, options) {
@@ -22,37 +30,40 @@
 
         this.settings = $.extend({}, defaults, options);
         this._defaults = defaults;
-        this._name = pluginName;
-        this.init();
+        this._init();
     }
 
     Plugin.prototype = {
-        init: function () {
+        _init: function () {
             var $that = this;
             this.phrases = [];
 
-            this.element.addClass('morphext');
+            this.element.addClass("morphext");
 
             $.each(this.element.text().split(this.settings.separator), function (key, value) {
-                $that.phrases.push(value);
+                $that.phrases.push($.trim(value));
             });
-
-            this.element.html("<span>" + this.phrases.join('</span><span>') + "</span>");
 
             this.index = -1;
             this.animate();
+            this.start();
+        },
+        animate: function () {
+            this.index = ++this.index % this.phrases.length;
+            this.element[0].innerHTML = "<span class=\"animated " + this.settings.animation + "\">" + this.phrases[this.index] + "</span>";
 
-            setInterval(function () {
+            if ($.isFunction(this.settings.complete)) {
+                this.settings.complete.call(this);
+            }
+        },
+        start: function () {
+            var $that = this;
+            this._interval = setInterval(function () {
                 $that.animate();
             }, this.settings.speed);
         },
-        animate: function () {
-            if ((this.index + 1) === this.phrases.length)
-                this.index = -1;
-
-            ++this.index;
-
-            this.element.find('span').removeClass().eq(this.index).addClass('animated ' + this.settings.animation);
+        stop: function () {
+            this._interval = clearInterval(this._interval);
         }
     };
 
@@ -63,4 +74,4 @@
             }
         });
     };
-})(jQuery, window, document);
+})(jQuery);

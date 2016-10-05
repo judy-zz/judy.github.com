@@ -1,7 +1,7 @@
 $(function(){
     
     /*-------------------------------------------------------------------*/
-    /*  Project slide. Requires owl carousel plugin.
+    /*  Project slider. Requires owl carousel plugin.
     /*-------------------------------------------------------------------*/
     $(window).smartload(function(){
         $('.owl-carousel').owlCarousel({

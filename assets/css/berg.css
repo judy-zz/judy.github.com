@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------------
 /*  Theme Name  : BERG
 /*  Description : Creative Resume Template
-/*  Version     : 1.4
+/*  Version     : 2.0
 /*-----------------------------------------------------------------------
 
 1. GLOBAL STYLES (USED IN VARIOUS SECTION OF THE WEBSITE)
@@ -13,10 +13,9 @@
 2. COMPONENTS (ELEMENTS USED IN MANY SECTION)
         2.1. BUTTON
         2.2. DIVIDER
-        2.3. UPPERCASE
-        2.4. SELECT BOXES CUSTOM
-        2.5. RADIO BUTTON CUSTOM
-        2.6. CHECKBOX CUSTOM
+        2.3. SELECT BOXES CUSTOM
+        2.4. RADIO BUTTON CUSTOM
+        2.5. CHECKBOX CUSTOM
 
 3. PRELOADER
 
@@ -24,7 +23,8 @@
         4.1. TEXT SLIDER
         4.2. SLIDESHOW
         4.3. PARALLAX
-        4.4. BLINKER
+        4.4. BACKGROUND CAROUSEL
+        4.5. BLINKER
 
 5. NAVIGATION
         5.1. NAVIGATION - CENTER MENU
@@ -42,7 +42,7 @@
 
         6.3. SECTION - SERVICES
 
-        6.4. SECTION - STRENGHTS
+        6.4. SECTION - STRENGTHS
 
         6.5. SECTION - RESUME
 
@@ -208,15 +208,7 @@ span.divider.center {
 
 
 /*---------------------------------------------------------------------*/
-/*  2.3. UPPERCASE
-/*---------------------------------------------------------------------*/
-.uppercase {
-  text-transform: uppercase;
-}
-
-
-/*---------------------------------------------------------------------*/
-/*  2.4. SELECT BOXES CUSTOM
+/*  2.3. SELECT BOXES CUSTOM
 /*---------------------------------------------------------------------*/
 .select2-container--default .select2-selection--single.select2-container-custom {
   background-color: #0d0c0d;
@@ -275,7 +267,7 @@ span.divider.center {
 
 
 /*---------------------------------------------------------------------*/
-/*  2.5. RADIO BUTTON CUSTOM
+/*  2.4. RADIO BUTTON CUSTOM
 /*---------------------------------------------------------------------*/
 .form-group .radio {
   margin-bottom: 5px;
@@ -323,7 +315,7 @@ span.divider.center {
 
 
 /*---------------------------------------------------------------------*/
-/*  2.6. CHECKBOX CUSTOM
+/*  2.5. CHECKBOX CUSTOM
 /*---------------------------------------------------------------------*/
 .form-group .checkbox {
   margin-bottom: 5px;
@@ -479,14 +471,15 @@ header.hero .hero-body .hero-text h1 {
 
 @media (min-width: 768px) {
   header.hero .hero-body .hero-text h1 {
-    font-size: 78px;
+    font-size: 68px;
   }
 }
 
 header.hero .hero-body .hero-text h1.small {
+  color: #ffffff;
   font-size: 45px;
   font-weight: 400;
-  color: #ffffff;
+  letter-spacing: -1px;
 }
 
 @media (min-width: 600px) {
@@ -551,7 +544,7 @@ header.hero .hero-body .hero-text p {
 }
 
 header.hero .hero-body .hero-text .page-scroll {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 
@@ -607,7 +600,108 @@ header.hero.parallax-yes > .parallax > .bcg {
 
 
 /*---------------------------------------------------------------------*/
-/*  4.4. BLINKER
+/*  4.4 BACKGROUND CAROUSEL
+/*---------------------------------------------------------------------*/
+header.hero.owl-bg-carousel-yes {
+  background: transparent;
+}
+
+header.hero.owl-bg-carousel-yes .owl-bg-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+header.hero.owl-bg-carousel-yes .owl-bg-carousel .owl-bg-image {
+  display: block;
+  position: relative;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+
+header.hero.owl-bg-carousel-yes .owl-theme .owl-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+header.hero.owl-bg-carousel-yes .owl-theme .owl-controls .owl-pagination {
+  position: absolute;
+  bottom: 65px;
+  width: 100%;
+  z-index: 20;
+}
+
+@media (max-width: 991px) {
+  header.hero.owl-bg-carousel-yes .owl-theme .owl-controls .owl-pagination {
+    display: none;
+  }
+}
+
+header.hero.owl-bg-carousel-yes .owl-theme .owl-controls .owl-buttons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  header.hero.owl-bg-carousel-yes .owl-theme .owl-controls .owl-buttons {
+    display: none;
+  }
+}
+
+header.hero.owl-bg-carousel-yes .owl-theme .owl-controls .owl-buttons .owl-prev,
+header.hero.owl-bg-carousel-yes .owl-theme .owl-controls .owl-buttons .owl-next {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  margin-top: -25px;
+  padding: 0;
+  background: transparent;
+  font-size: 50px;
+  font-weight: 700;
+  opacity: 0.7;
+  z-index: 20;
+}
+
+header.hero.owl-bg-carousel-yes .owl-theme .owl-controls .owl-buttons .owl-prev {
+  left: 50px;
+}
+
+header.hero.owl-bg-carousel-yes .owl-theme .owl-controls .owl-buttons .owl-next {
+  right: 50px;
+}
+
+header.hero.owl-bg-carousel-yes .owl-theme .owl-controls .owl-page span {
+  border-radius: 0;
+  width: 35px;
+  height: 3px;
+  background: #fff;
+  margin: 0 3px;
+  opacity: 0.6;
+}
+
+header.hero.owl-bg-carousel-yes .owl-theme .owl-controls .owl-page span:hover {
+  opacity: 0.6;
+}
+
+header.hero.owl-bg-carousel-yes .owl-theme .owl-controls .owl-page.active span {
+  background: #c80a48;
+  opacity: 1;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  4.5. BLINKER
 /*---------------------------------------------------------------------*/
 @-moz-keyframes blinker {
   0% {
@@ -655,6 +749,7 @@ header.hero.parallax-yes > .parallax > .bcg {
   height: 66px;
   background-color: #171717;
   border-bottom: 1px solid #282428;
+  z-index: 1030 !important;
 }
 
 @media (min-width: 992px) {
@@ -807,6 +902,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 
 .navbar.navbar-fixed-top .navbar-collapse {
   border: 0;
+  max-height: 500px; /* default 340px */
 }
 
 @media (max-width: 991px) {
@@ -850,6 +946,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 .section .section-title {
   margin-bottom: 20px;
   font-size: 35px;
+  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
@@ -1002,11 +1099,14 @@ header.hero.parallax-yes > .parallax > .bcg {
     text-align: justify;
   }
 }
-
 @media (min-width: 992px) {
   #profile .profile-text {
     padding-top: 100px;
   }
+}
+
+#profile .profile-text h2 {
+  text-transform: uppercase;
 }
 
 @media (max-width: 767px) {
@@ -1051,6 +1151,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 #profile .contact-details h4 {
   margin-bottom: 15px;
   font-size: 18px;
+  text-transform: uppercase;
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -1072,12 +1173,12 @@ header.hero.parallax-yes > .parallax > .bcg {
 }
 
 #profile .contact-details a.btn-custom {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 @media (min-width: 768px) {
   #profile .contact-details a.btn-custom {
-    margin-top: 20px;
+    margin-top: 50px;
   }
 }
 
@@ -1099,6 +1200,10 @@ header.hero.parallax-yes > .parallax > .bcg {
 /*---------------------------------------------------------------------*/
 #profile .pp-wrapper {
   position: relative;
+}
+
+#profile .pp-wrapper .profile-picture h4 {
+  text-transform: uppercase;
 }
 
 #profile .pp-wrapper .profile-picture.style-one {
@@ -1128,14 +1233,13 @@ header.hero.parallax-yes > .parallax > .bcg {
 /*---------------------------------------------------------------------*/
 /*  6.2. SECTION - PORTFOLIO
 /*---------------------------------------------------------------------*/
-#opensource, #closedsource {
+#portfolio {
   position: relative;
   z-index: 5;
   background-color: #171717;
 }
 
-#opensource .section-wrapper > .section-content,
-#closedsource .section-wrapper > .section-content {
+#portfolio .section-wrapper > .section-content {
   padding-bottom: 0px;
 }
 
@@ -1146,6 +1250,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 .portfolio .item {
   position: relative;
   padding: 0px;
+  max-width: 100%;
 }
 
 .portfolio .item > .project-wrapper {
@@ -1352,7 +1457,7 @@ button.mfp-arrow:active {
 /*---------------------------------------------------------------------*/
 /*  6.3. SECTION - SERVICES
 /*---------------------------------------------------------------------*/
-#closedsource {
+#services {
   background-color: #0d0c0d;
 }
 
@@ -1420,6 +1525,7 @@ button.mfp-arrow:active {
 
 .services .item > .inner-content > h4 {
   margin-top: 15px;
+  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
@@ -1454,23 +1560,23 @@ button.mfp-arrow:active {
 
 
 /*---------------------------------------------------------------------*/
-/*  6.4. SECTION - STRENGHTS
+/*  6.4. SECTION - STRENGTHS
 /*---------------------------------------------------------------------*/
-#strenghts {
-  background-image: url('../images/bg-strenghts.jpg');
+#strengths {
+  background-image: url('../images/bg-strengths.jpg');
   background-position: center top;
 }
 
-#strenghts .section-wrapper > .section-content {
+#strengths .section-wrapper > .section-content {
   padding-bottom: 0px;
 }
 
-#strenghts.parallax-yes {
+#strengths.parallax-yes {
   background: none;
 }
 
-#strenghts.parallax-yes > .parallax > .bcg {
-  background-image: url('../images/bg-strenghts.jpg');
+#strengths.parallax-yes > .parallax > .bcg {
+  background-image: url('../images/bg-strengths.jpg');
 }
 
 .column-chart {
@@ -1654,10 +1760,14 @@ button.mfp-arrow:active {
   left: 50%;
   font-size: 14px;
   text-align: center;
+  text-transform: uppercase;
   letter-spacing: 2px;
   -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
   transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  -ms-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 @media (min-width: 360px) {
@@ -1855,15 +1965,15 @@ button.mfp-arrow:active {
 /*---------------------------------------------------------------------*/
 /*  6.6. SECTION - REFERENCES
 /*---------------------------------------------------------------------*/
-#testimonials {
+#references {
   background-image: url('../images/bg-references.jpg');
 }
 
-#testimonials .section-wrapper > .section-content {
+#references .section-wrapper > .section-content {
   padding-bottom: 160px;
 }
 
-#testimonials .flexslider.references {
+#references .flexslider.references {
   margin-top: 30px;
   margin-bottom: 0px;
   background: transparent;
@@ -1874,11 +1984,11 @@ button.mfp-arrow:active {
   box-shadow: none;
 }
 
-#testimonials .flexslider.references:hover .flex-direction-nav-custom > li > a {
+#references .flexslider.references:hover .flex-direction-nav-custom > li > a {
   opacity: 1;
 }
 
-#testimonials .flexslider.references > .slides > .item .profile {
+#references .flexslider.references > .slides > .item .profile {
   position: absolute;
   top: 0;
   left: 0;
@@ -1886,7 +1996,7 @@ button.mfp-arrow:active {
   height: 120px;
 }
 
-#testimonials .flexslider.references > .slides > .item .profile:before {
+#references .flexslider.references > .slides > .item .profile:before {
   display: block;
   position: absolute;
   content: '\ec98';
@@ -1907,23 +2017,23 @@ button.mfp-arrow:active {
   border-radius: 50%;
 }
 
-#testimonials .flexslider.references > .slides > .item .profile > img {
+#references .flexslider.references > .slides > .item .profile > img {
   display: block;
   width: 120px;
   height: 120px;
 }
 
-#testimonials .flexslider.references > .slides > .item .content {
+#references .flexslider.references > .slides > .item .content {
   color: #a1a1a1;
 }
 
 @media (min-width: 768px) {
-  #testimonials .flexslider.references > .slides > .item .content {
+  #references .flexslider.references > .slides > .item .content {
     padding-left: 160px;
   }
 }
 
-#testimonials .flexslider.references > .slides > .item .content h3 {
+#references .flexslider.references > .slides > .item .content h3 {
   margin-bottom: 20px;
   color: #ffffff;
   text-transform: uppercase;
@@ -1931,47 +2041,47 @@ button.mfp-arrow:active {
 }
 
 @media (max-width: 767px) {
-  #testimonials .flexslider.references > .slides > .item .content h3 {
+  #references .flexslider.references > .slides > .item .content h3 {
     text-align: center;
   }
 }
 
-#testimonials .flexslider.references > .slides > .item .content p {
+#references .flexslider.references > .slides > .item .content p {
   font-size: 22px;
   font-style: italic;
   text-align: center;
 }
 
 @media (min-width: 768px) {
-  #testimonials .flexslider.references > .slides > .item .content p {
+  #references .flexslider.references > .slides > .item .content p {
     text-align: justify;
   }
 }
 
-#testimonials .flexslider.references > .slides > .item .content p.source {
+#references .flexslider.references > .slides > .item .content p.source {
   margin-top: 20px;
   color: #ffffff;
   font-size: 18px;
 }
 
-#testimonials .flexslider.references > .slides > .item .content p.source > span {
+#references .flexslider.references > .slides > .item .content p.source > span {
   color: #a1a1a1;
 }
 
-#testimonials .flexslider.references .flexslider-controls > .flex-control-nav {
+#references .flexslider.references .flexslider-controls > .flex-control-nav {
   bottom: -60px;
 }
 
-#testimonials .flexslider.references .flexslider-controls > .flex-control-nav > li {
+#references .flexslider.references .flexslider-controls > .flex-control-nav > li {
   position: relative;
   margin: 0 3px;
 }
 
-#testimonials .flexslider.references .flexslider-controls > .flex-control-nav > li:hover {
+#references .flexslider.references .flexslider-controls > .flex-control-nav > li:hover {
   cursor: pointer;
 }
 
-#testimonials .flexslider.references .flexslider-controls > .flex-control-nav > li:before {
+#references .flexslider.references .flexslider-controls > .flex-control-nav > li:before {
   display: block;
   position: absolute;
   content: '';
@@ -1984,17 +2094,17 @@ button.mfp-arrow:active {
   opacity: 0.7;
 }
 
-#testimonials .flexslider.references .flexslider-controls > .flex-control-nav > li > img {
+#references .flexslider.references .flexslider-controls > .flex-control-nav > li > img {
   width: 40px;
   height: 40px;
   border-radius: 3px;
 }
 
-#testimonials .flexslider.references .flexslider-controls > .flex-control-nav > li.flex-active:before {
+#references .flexslider.references .flexslider-controls > .flex-control-nav > li.flex-active:before {
   opacity: 0.2;
 }
 
-#testimonials .flexslider.references > .flex-direction-nav-custom {
+#references .flexslider.references > .flex-direction-nav-custom {
   position: absolute;
   z-index: 15;
   top: 0;
@@ -2002,32 +2112,32 @@ button.mfp-arrow:active {
   margin-top: -5px;
 }
 
-#testimonials .flexslider.references > .flex-direction-nav-custom > li {
+#references .flexslider.references > .flex-direction-nav-custom > li {
   padding: 0px;
 }
 
-#testimonials .flexslider.references > .flex-direction-nav-custom > li:hover {
+#references .flexslider.references > .flex-direction-nav-custom > li:hover {
   cursor: pointer;
 }
 
-#testimonials .flexslider.references > .flex-direction-nav-custom > li:hover > a {
+#references .flexslider.references > .flex-direction-nav-custom > li:hover > a {
   color: #ffffff;
 }
 
-#testimonials .flexslider.references > .flex-direction-nav-custom > li > a {
+#references .flexslider.references > .flex-direction-nav-custom > li > a {
   color: #a1a1a1;
   font-size: 35px;
 }
 
-#testimonials .flexslider.references > .flex-direction-nav-custom > li > a.flex-prev {
+#references .flexslider.references > .flex-direction-nav-custom > li > a.flex-prev {
   padding-right: 20px;
 }
 
-#testimonials.parallax-yes {
+#references.parallax-yes {
   background: none;
 }
 
-#testimonials.parallax-yes > .parallax > .bcg {
+#references.parallax-yes > .parallax > .bcg {
   background-image: url('../images/bg-references.jpg');
 }
 
@@ -2116,6 +2226,8 @@ button.mfp-arrow:active {
 
 .circle-chart .item > h4 {
   margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
@@ -2148,6 +2260,7 @@ button.mfp-arrow:active {
 
 .bar-chart > .item > h4 {
   margin-bottom: 18px;
+  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
@@ -2162,7 +2275,7 @@ button.mfp-arrow:active {
   position: relative;
   width: 100%;
   height: 20px;
-  margin-top: 3px;
+  margin-top: 15px;
   border-radius: 2px;
   background-color: #a1a1a1;
 }
@@ -2660,7 +2773,7 @@ button.mfp-arrow:active {
 }
 
 /* Firefox 4 to 18 */
-#contact.contact-form .form-group .input-group :-moz-placeholder {
+#contact .contact-form .form-group .input-group :-moz-placeholder {
   color: #a1a1a1;
   opacity: 1;
 }
@@ -2704,15 +2817,15 @@ button.mfp-arrow:active {
   box-shadow: none;
 }
 
+
+/*---------------------------------------------------------------------*/
+/*  6.12.2. CONTACT DETAILS
+/*---------------------------------------------------------------------*/
 #contact .contact-details {
   margin-top: 20px;
   margin-bottom: 40px;
 }
 
-
-/*---------------------------------------------------------------------*/
-/*  6.12.2. CONTACT DETAILS
-/*---------------------------------------------------------------------*/
 #contact .contact-details .speech-bubble {
   position: relative;
   width: 170px;
@@ -2732,6 +2845,7 @@ button.mfp-arrow:active {
   padding-top: 50px;
   font-size: 30px;
   font-weight: 700;
+  text-transform: uppercase;
   text-align: center;
   letter-spacing: 1px;
 }
@@ -2739,6 +2853,7 @@ button.mfp-arrow:active {
 #contact .contact-details h2 {
   margin-top: 20px;
   font-size: 40px;
+  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
@@ -2882,6 +2997,11 @@ footer.footer .page-scroll > a {
 footer.footer ul.social-icons {
   margin: 0;
   text-align: center;
+}
+
+footer.footer ul.social-icons > li {
+  padding-right: 7px;
+  padding-left: 7px;
 }
 
 footer.footer ul.social-icons > li:hover > .item img {

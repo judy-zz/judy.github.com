@@ -6,9 +6,9 @@ $(function(){
         /*-------------------------------------------------------------------*/
         /*  1. Section subtitle
         /*-------------------------------------------------------------------*/
-        $('.section-subtitle').css('opacity', 0).one('inview', function(isInView){
+        /*$('.section-subtitle').css('opacity', 0).one('inview', function(isInView){
             if (isInView) {$(this).addClass('animated bounceInLeft').css('opacity', 1);}
-        });
+        });*/
         
         
         /*-------------------------------------------------------------------*/
@@ -22,27 +22,19 @@ $(function(){
         /*-------------------------------------------------------------------*/
         /*  3. Section - Services
         /*-------------------------------------------------------------------*/
-        $('.inner-content', '#services').find('h4').each(function(i){            
-            var element = $(this),
-            itemsDelay   = ( isNaN($(this).data('animation-delay')) ? 50 : $(this).data('animation-delay'));
-            element.css('opacity', 0).one('inview', function(isInView) {
-                if (isInView){
-                    setTimeout(function(){
-                        element.addClass('animated fadeInUp').css('opacity', 1);
-                    } , itemsDelay * (i * 2));
-                }
-            });
+        $('.inner-content', '#services').find('h4').css('opacity', 0).one('inview', function(isInView){
+            if (isInView) {$(this).addClass('animated fadeInUp').css('opacity', 1);}
         });
         
         
         /*-------------------------------------------------------------------*/
-        /*  4. Section - Strenghts
+        /*  4. Section - Strengths
         /*-------------------------------------------------------------------*/
-        $('.legend-left', '#strenghts').find('.legend-title').css('opacity', 0).one('inview', function(isInView){
+        /*$('.legend-left', '#strengths').find('.legend-title').css('opacity', 0).one('inview', function(isInView){
             if (isInView) {$(this).addClass('animated bounceInLeft').css('opacity', 1);}
         });
         
-        $('.legend-right', '#strenghts').find('.item').each(function(i){
+        $('.legend-right', '#strengths').find('.item').each(function(i){
             var element = $(this),
             itemsDelay   = ( isNaN($(this).data('animation-delay')) ? 50 : $(this).data('animation-delay'));
             element.css('opacity', 0).one('inview', function(isInView) {
@@ -52,7 +44,7 @@ $(function(){
                     } , itemsDelay * (i * 3));
                 }
             });
-        });
+        });*/
        
         
         /*-------------------------------------------------------------------*/
@@ -65,7 +57,7 @@ $(function(){
                 if (isInView){
                     setTimeout(function(){
                         element.addClass('animated bounceInUp').css('opacity', 1);
-                    } , itemsDelay * (i * 2));
+                    } , itemsDelay * (i * 1.5));
                 }
             });
         });
@@ -77,7 +69,7 @@ $(function(){
                 if (isInView){
                     setTimeout(function(){
                         element.addClass('animated bounceInUp').css('opacity', 1);
-                    } , itemsDelay * (i * 2));
+                    } , itemsDelay * (i * 1.5));
                 }
             });
         });
@@ -93,7 +85,7 @@ $(function(){
                 if (isInView){
                     setTimeout(function(){
                         element.addClass('animated bounceInUp').css('opacity', 1);
-                    } , itemsDelay * (i * 2));
+                    } , itemsDelay * (i * 1.5));
                 }
             });
         });
@@ -110,7 +102,7 @@ $(function(){
                 if (isInView){
                     setTimeout(function(){
                         element.addClass('animated fadeInUp').css('opacity', 1);
-                    } , itemsDelay * (i * 5));
+                    } , itemsDelay * (i * 2));
                 }
             });
         });
@@ -119,15 +111,15 @@ $(function(){
         /*-------------------------------------------------------------------*/
         /*  8. Section - Contact
         /*-------------------------------------------------------------------*/
-        $('.contact-details', '#contact').css('opacity', 0).one('inview', function(isInView){
+        /*$('.contact-details', '#contact').css('opacity', 0).one('inview', function(isInView){
             if (isInView) {$(this).addClass('animated flipInX').css('opacity', 1);}
-        });
+        });*/
         
         
         /*-------------------------------------------------------------------*/
         /*  9. Footer
         /*-------------------------------------------------------------------*/
-        $('.footer').find('.item').each(function(i){
+        /*$('.footer').find('.item').each(function(i){
             var element = $(this),
             itemsDelay   = ( isNaN($(this).data('animation-delay')) ? 50 : $(this).data('animation-delay'));
             
@@ -138,6 +130,6 @@ $(function(){
                     } , itemsDelay * (i * 2));
                 }
             });
-        });
+        });*/
     }
 });

@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------
-/*  GREEN 2
+/*  COLOR STYLESHEET - GREEN 2
 /*-----------------------------------------------------------------------
 
 1. GLOBAL STYLES
@@ -12,6 +12,9 @@
         2.4. SELECT BOXES CUSTOM
 
 3. PRELOADER
+
+4. HOME
+        4.4. BACKGROUND CAROUSEL
 
 5. NAVIGATION
 
@@ -100,6 +103,15 @@ span.divider {
 /*---------------------------------------------------------------------*/
 #jpreBar {
   background-color: #149b60;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  4. HOME
+/*  4.4 BACKGROUND CAROUSEL
+/*---------------------------------------------------------------------*/
+header.hero.owl-bg-carousel-yes .owl-theme .owl-controls .owl-page.active span {
+  background: #149b60;
 }
 
 
