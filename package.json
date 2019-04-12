@@ -1,0 +1,12 @@
+{
+  "name": "judy.github.com",
+  "version": "1.0.0",
+  "description": "@judy's resume site",
+  "main": "index.js",
+  "repository": "git@github.com:judy/judy.github.com.git",
+  "author": "Clinton Judy <clinton@judy.io>",
+  "license": "MIT",
+  "dependencies": {
+    "brunch": "^2.10.17"
+  }
+}
